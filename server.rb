@@ -6,7 +6,7 @@ get '/' do
   erb :index
 end
 
-post '/ingredient' do
+post '/ingredients' do
   ingredient = params['ingredient']
 
   File.open('ingredients.txt', 'a') do |file|
